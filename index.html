@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tyler Eisner — Portfolio</title>
+  <meta name="description" content="Tyler Eisner's Portfolio" />
+  <link rel="preload" href="assets/me.jpg" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="/">Tyler Eisner</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="https://github.com/tyty-04" class="btn" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/tyler-eisner/" class="btn" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+        </a></li>
+        <li><a href="mailto:tylerseisner@gmail.com" class="btn" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+        </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <img class="hero-avatar" src="assets/me.jpg" alt="Photo of Tyler"/>
+      <div>
+        <h1>Hi, I’m Tyler.</h1>
+        <p>I'm a 3rd year Computer Science major and Media Arts and Design minor at The University of Chicago from Winston-Salem, NC. I have a passion for coding and creating, and love to challenge myself and learn new things through problem solving. 
+        </p>
+        <a class="btn btn-ghost" href="/Tyler_Eisner_Resume.pdf">Resume</a>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Projects and Experience</h2>
+      <div class="grid cards">
+        <article class="card reveal">
+          <h3>Harvest of Names</h3>
+          <p>As part of a summer internship working on Harvest of Names, a currently unreleased JRPG, I designed and developed a custom interpreter script for YarnSpinner in Unity. I also created an early implementation of a day-night cycle and calendar. Learn more about Harvest of Names <a href="https://www.sevakhusid.games/ha-na" target="_blank" rel="noopener">here</a>.</p>
+          <div class="tags"><span>Unity</span><span>C#</span></div>
+        </article>
+        <article class="card reveal">
+          <h3>Fateweaver</h3>
+          <p>I was the lead developer for Fateweaver, a prototype ARPG rougelike created by a 3-man team as part of the UChicago Game Design development track. I wrote a 20 page design document for the game as well as programmed the core gameplay mechanincs such as comat and progression.</p>
+          <div class="tags"><span>Unity</span><span>C#</span></div>
+        </article>
+        <article class="card reveal">
+          <h3>Destiny 2 Loadout Randomizer</h3>
+          <p>For a web development hackathon I created a loadout randomizer for the game Destiny 2. The website interfaced with the Destiny API to view the player's inventory and randomly select new items for their loadout.</p>
+          <div class="tags"><span>JavaScript</span><span>HTML/CSS</span><span>APIs</span></div>
+        </article>
+        <article class="card reveal">
+          <h3>Shell Game Eye Tracker</h3>
+          <p>As part of an internship at APEX Lab at UChicago, I created a VR version of the well known <a href="https://en.wikipedia.org/wiki/Shell_game" target="_blank" rel="noopener">shell game</a> to be used in eye tracking experiments. While playing, the game interfaced with python lab streaming layer code to record data on where the player looked.</p>
+          <div class="tags"><span>Virtual Reality</span><span>Unity</span><span>C#</span><span>Python</span></div>
+        </article>
+        <article class="card reveal">
+          <h3>Supplyve QA App</h3>
+          <p>For my gap year I interned at a startup called Supplyve. While there, I created a mobile screen recording app with features for internal QA such as easy pausing, timestamping, and more for easy bug reporting and testing.</p>
+          <div class="tags"><span>Flutter</span><span>Dart</span><span>Android</span></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <small>© <span id="year"></span> Tyler Eisner</small>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
