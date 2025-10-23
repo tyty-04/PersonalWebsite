@@ -2,38 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tyler Eisner — Portfolio</title>
-  <meta name="description" content="Tyler Eisner's Portfolio" />
-  <link rel="preload" href="assets/me.jpg" as="image" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fateweaver | Tyler Eisner</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="nav container">
+        <a class="brand" href="/">Tyler Eisner</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu" class="nav-menu">
+            <li><a href="https://github.com/tyty-04" class="btn" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/tyler-eisner/" class="btn" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            </a></li>
+            <li><a href="mailto:tylerseisner@gmail.com" class="btn" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+            </a></li>
+        </ul>
+        </nav>
+    </header>
 
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="/">Tyler Eisner</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
-      <ul id="nav-menu" class="nav-menu">
-        <li><a href="https://github.com/tyty-04" class="btn" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-        </a></li>
-        <li><a href="https://www.linkedin.com/in/tyler-eisner/" class="btn" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-        </a></li>
-        <li><a href="mailto:tylerseisner@gmail.com" class="btn" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-        </a></li>
+  <main class="container">
+    <h1>Fateweaver</h1>
+    <p>Short pitch of the game.</p>
+
+    <!-- Example sections -->
+    <section>
+      <h2>Screenshots</h2>
+      <img src="/images/fateweaver-1.png" alt="Fateweaver screenshot">
+    </section>
+
+    <section>
+      <h2>What I Built</h2>
+      <ul>
+        <li>Turn system, action queue, status effects</li>
+        <li>AI behaviors</li>
+        <li>Tooling: encounter editor, etc.</li>
       </ul>
-    </nav>
-  </header>
+    </section>
 
-  <footer class="site-footer container">
-    <small>© <span id="year"></span> Tyler Eisner</small>
-  </footer>
+    <a href="/" class="btn">← Back to portfolio</a>
+  </main>
 
-  <script src="main.js" defer></script>
+  <footer>…</footer>
 </body>
 </html>
