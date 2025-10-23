@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fateweaver | Tyler Eisner</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <header class="site-header">
@@ -27,26 +28,38 @@
 
   <main class="container">
     <h1>Fateweaver</h1>
-    <p>Short pitch of the game.</p>
-
-    <!-- Example sections -->
-    <section>
-      <h2>Screenshots</h2>
-      <img src="/images/fateweaver-1.png" alt="Fateweaver screenshot">
+    <p>The idea of fateweaver was to combine the in depth build crafting of MMORPGs with the fast paced gameplay of ARPGs. We wanted to create a game where players could experience the leveling and endgame of something like World of Warcraft in the roughly hour long runs of a rougelike. Read the full design document for more details.</p>
+    <a class="btn btn-ghost" href="assets/Fateweaver_Design_Doc.pdf">Design Document</a>
+      
+    <section class="download">
+      <p>Want to try the prototype? Download the build below:</p>
+      <a href="/downloads/Fateweaver.zip" class="btn btn-ghost" download>
+        Fateweaver (Windows)
+      </a>
     </section>
 
-    <section>
-      <h2>What I Built</h2>
+    <section class="gallery">
+      <div class="gallery-grid">
+        <img src="/assets/Fateweaver1.jpg" alt="Fateweaver battle UI" loading="lazy">
+        <img src="/assets/Fateweaver2.jpg" alt="Fateweaver overworld" loading="lazy">
+        <img src="/assets/Fateweaver3.jpg" alt="Fateweaver character sheet" loading="lazy">
+        <img src="/assets/Fateweaver4.png" alt="Fateweaver ability tree" loading="lazy">
+      </div>
+    </section>
+
+    <section class="what-i-did">
+      <h2>What I Did</h2>
       <ul>
-        <li>Turn system, action queue, status effects</li>
-        <li>AI behaviors</li>
-        <li>Tooling: encounter editor, etc.</li>
+        <li>Designed core mechanics</li>
+        <li>Wrote design document</li>
+        <li>Character controls</li>
+        <li>Enemy behavior</li>
+        <li>Abilities and leveling system</li>
       </ul>
     </section>
 
-    <a href="/" class="btn">← Back to portfolio</a>
-  </main>
-
-  <footer>…</footer>
+  <footer class="site-footer container">
+    <small>© <span id="year"></span> Tyler Eisner</small>
+  </footer>
 </body>
 </html>

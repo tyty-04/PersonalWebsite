@@ -74,6 +74,39 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ring); outline-
 .skip-link { position: absolute; left: -9999px; }
 .skip-link:focus { left: 1rem; top: 1rem; background: var(--brand); color: #fff; padding: .5rem .75rem; border-radius: 8px; }
 
-/* 8) Subtle scroll-reveal */
-.reveal { opacity: 0; transform: translateY(10px); will-change: transform, opacity; }
-.reveal.visible { opacity: 1; transform: none; transition: opacity .5s ease, transform .5s ease; }
+.gallery { margin-block: 2.5rem; }
+.gallery-grid {
+  display: grid;
+  gap: 1rem;                 /* space between tiles */
+  grid-template-columns: 1fr;  /* 1-col on mobile */
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,.12);
+  aspect-ratio: 16 / 9;     /* consistent tile shapes */
+  object-fit: cover;
+}
+@media (min-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2×2 grid on larger screens */
+  }
+}
+
+.what-i-did ul {
+  display: flex;
+  flex-wrap: wrap;          /* allow wrapping on smaller screens */
+  gap: 1rem 2rem;           /* vertical and horizontal spacing */
+  list-style: none;         /* remove bullets */
+  padding: 0;
+  margin: 1rem 0;
+  justify-content: center;  /* center across page */
+}
+
+.what-i-did li { box-shadow: none; background: none; padding: 0; }
+
+.what-i-did {
+  text-align: center;
+}
